@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa:400,700|Lobster&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+	<div id="pizza">
+		<button id="open-btn" class="start">Открыть конструктор</button>
+		<div id="pnl" class="panel">
+			<img class="item" src="images/item.png" alt="item">
+			<p class="price">Цена: <span>00.00</span> $</p>
+			<div class="selected-items">
+				<h2>Выбранные:</h2>
+				<img src="images/ingridients/base-1.png" alt="pomodoro">
+				<img src="images/ingridients/base-2.png" alt="origano">
+				<img src="images/ingridients/salame.png" alt="salame">
+				<img src="images/ingridients/frutti-di-mare.png" alt="frutti di mare">
+				<img src="images/ingridients/pancetta.png" alt="pancetta">
+				<img src="images/ingridients/funghi.png" alt="funghi">
+				<img src="images/ingridients/olive.png" alt="olive nere">
+				<img src="images/ingridients/ricota.png" alt="mozarella">
+				<img src="images/ingridients/passata.png" alt="passata di pomodoro">
+				<img src="images/ingridients/salsa.png" alt="salsa di panna">
+				<br>
+			</div>
+			<div class="pizza">
+				<img class="zero" src="images/flat-pizza.png" alt="pizza">
+			</div>
+			<button id="order-btn" class="order">Заказать!</button>
+			<h1>Меню</h1>
+			<div class="elements">
+				<div class="ingridienti">
+					<h2>Базовые :</h2>
+					<ul data-type="base">
+						<li data-cost=".9">
+							<figure>
+								<img src="images/ingridients/base-1.png" alt="pomodoro">
+								<figcaption>Помидор</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost=".6">
+							<figure>
+								<img src="images/ingridients/base-2.png" alt="origano">
+								<figcaption>Оригано</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+					</ul>
+				</div>
+				<div class="ingridienti">
+					<h2>Ингридиент 1 :</h2>
+					<ul data-type="first">
+						<li data-cost="3.2">
+							<figure>
+								<img src="images/ingridients/salame.png" alt="salame">
+								<figcaption>Салями</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost="5.7">
+							<figure>
+								<img src="images/ingridients/frutti-di-mare.png" alt="frutti di mare">
+								<figcaption>Морские животные</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost="2.6">
+							<figure>
+								<img src="images/ingridients/pancetta.png" alt="pancetta">
+								<figcaption>Бекон</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+					</ul>
+				</div>
+				<div class="ingridienti">
+					<h2>Ингридиент 2 :</h2>
+					<ul data-type="second">
+						<li data-cost="2.5">
+							<figure>
+								<img src="images/ingridients/funghi.png" alt="funghi">
+								<figcaption>Грибы</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost="1.7">
+							<figure>
+								<img src="images/ingridients/olive.png" alt="olive nere">
+								<figcaption>Оливки</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost="2.3">
+							<figure>
+								<img src="images/ingridients/ricota.png" alt="mozarella">
+								<figcaption>Моцарелла</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+					</ul>
+				</div>
+				<div class="ingridienti">
+					<h2>Соус :</h2>
+					<ul data-type="sauce">
+						<li data-cost=".6">
+							<figure>
+								<img src="images/ingridients/passata.png" alt="passata di pomodoro">
+								<figcaption>Кетчуп</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+						<li data-cost=".9">
+							<figure>
+								<img src="images/ingridients/salsa.png" alt="salsa di panna">
+								<figcaption>Сливочный соус</figcaption>
+							</figure>
+							<button class="cancel"></button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<canvas id="c" width="1920" height="1080"></canvas>
+		<div id="pizza-box" class="scene">
+			<div class="shape cuboid-1 cub-1">
+				<div class="face ft"></div>
+				<div class="face bk"></div>
+				<div class="face rt"></div>
+				<div class="face lt"></div>
+				<div class="face bm"></div>
+				<div class="face tp">
+					<div id="stopwatch" class="stopwatch-box">
+						<div class="clock">
+    						<div class="min"></div>
+    					</div>
+						<p></p>
+					</div>
+					<img id="top-image" src="images/pizza_logo.png" alt="pizza logotype">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/smoke.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
